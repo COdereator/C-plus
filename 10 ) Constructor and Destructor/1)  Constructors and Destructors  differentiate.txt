@@ -1,0 +1,17 @@
+	Constructor							Destructor
+Constructor helps to initialize to destroy the instances.			Whereas destructor is used the object of a class.				 	
+
+The constructor’s name is thesame as the class name			The destructor name is the same as
+.		 						the class name but preceded by a tiled (~) operator.
+
+A constructor can either accept the arguments or not.	 		While it can’t have any argument.
+
+A constructor is called when the instance or object of the class is created..	It is called while the object of the class is freed or deleted
+
+
+A constructor is used to allocate the memory to an instance or object.	  	While it is used to deallocate the memory of an object of a class.
+			
+A constructor can be overloaded.					While it can’t be overloaded
+	.
+There is a concept of copy constructor which is used to initialize 		While here, there is no copy destructor concept.
+ .an object from another object	

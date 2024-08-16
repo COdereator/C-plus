@@ -1,0 +1,41 @@
+	C++ Friend Function
+If a function is defined as a friend function in C++, then the protected and private data of a class can be accessed using the function.
+
+By using the keyword friend compiler knows the given function is a friend function.
+
+For accessing the data, the declaration of a friend function should be done inside the body of a class starting with the keyword friend.
+
+Declaration of friend function in C++
+	class class_name    
+	{    
+    		friend data_type function_name(argument/s);            // syntax of friend function.  
+	};  
+  
+In the above declaration, the friend function is preceded by the keyword friend. The function can be defined anywhere in the
+ program like a normal C++ function. The function definition does not use either the keyword friend or scope resolution operator.
+
+==================================================================================================================
+		Friend Class in C++
+We can also use a friend Class in C++ using the friend keyword. For example,
+
+Syntax :-
+	class B;
+
+	class  A {
+	 	  // Class B is a friend class of Class A
+	   	friend class B;
+	 	 .. Body Of Class A. .. ...
+	}
+
+	class ClassB {
+	 	  ... Body of Class B .. ...
+	}
+When a class is declared a friend class, all the member functions of the friend class become friend functions.
+
+Since ClassB is a friend class, we can access all members of ClassA from inside ClassB.
+
+However, we cannot access members of ClassB from inside ClassA. It is because friend relation in C++ is only granted, not taken.
+
+
+
+

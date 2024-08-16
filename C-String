@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+
+   // Strings = collection of characters == word
+    char a[] = {"Hello"};
+    
+    // print the string
+    printf("String is : %s\n",a);
+
+    // printf the specific charaacter from the string
+    char b = a[2];
+    printf("Character : %c\n",b);
+    
+    // find the length
+    int length = strlen(a);
+    printf("Length : %d\n",length);
+    
+    // printf the string 2-method
+    printf("String is : ");
+    for(int i=0;i<strlen(a);i++)
+    {
+        printf("%c",a[i]);
+    }
+    printf("\n");
+    
+    // concate the string
+    char cat[]  = {" World"};
+    strcat(a,cat);
+    printf("Concate String is : %s\n",a);
+    
+    // compied the strings 
+    char copy[100];
+    strcpy(copy,a);
+    printf("Copied String is : %s\n",copy);
+    
+    // compare the string
+    char comp1[] = {"Iello"};
+    char comp2[] = {"Hello"};
+    int comparison = strcmp(comp1,comp2);
+    printf("Result : %d",comparison);
+    
+    
+    return 0;
+}

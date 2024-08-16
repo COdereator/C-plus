@@ -1,0 +1,71 @@
+Get String Input from User
+This program gets string input from user using cin. Later on, we've also created some programs to receive string input using functions.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    char str[200];
+    cout<<"Enter the String: ";
+    cin>>str;
+    cout<<"\nYou've entered: "<<str;
+    cout<<endl;
+    return 0;
+}
+Here is its sample run with user input, codescracker as string:
+
+get string input from user c++
+Here is another sample run with user input, input:-(this is codescracker.com) as string:
+
+C++ get input from user
+Output=this
+As you can see from this sample run,rest of the string, after this gets skipped. That is, the string before space, only gets received here.
+
+How to Get String Input with Spaces ?
+Important - To get string input along with spaces, use gets() or getline() function.
+
+To get string input using gets(), use it in this way:
+
+gets(str);
+whereas to get string input using getline(), use it in following way:
+
+getline(cin, str);
+Get String input with Spaces using gets()
+This program uses gets() to receive string input from user along with all the spaces. That is, this program doesn't skip any word from the entered string, without mattering about occurrence of spaces.
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+    char str[200];
+    cout<<"Enter the String: ";
+    gets(str);
+    cout<<"\nYou've entered: "<<str;
+    cout<<endl;
+    return 0;
+}
+Here is its sample run, with user input input:- this is codescracker.com:
+
+get string input with spaces c++
+Note - The function, gets() is defined in stdio.h header file
+
+Get String Input with Spaces using getline()
+And here is another program, that does the same job as of previous program. That is, this program also receives string input with spaces, using getline() function:
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string str;    /*here string is used as a datatype so for that use string header file and getline function   */
+    cout<<"Enter the String: ";
+    getline(cin, str);
+    cout<<"\nYou've entered: "<<str;
+    cout<<endl;
+    return 0;
+}
+
+
+c++ get string input from user
+Note - The function, getline() is defined in string header file. To declare a variable that stores or receives string input using this function, you have to use string data type of string header file.

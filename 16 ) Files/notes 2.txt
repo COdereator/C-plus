@@ -1,0 +1,23 @@
+////	string s= "shaikh";
+//int i;
+//	char str[255];
+//	cout<<"\nEnter Your String : ";
+//	cin.get(str , 255 , '\n');
+//
+//
+//	ofstream write("File Practice . txt ",ios::app);
+//	write<<endl;  // write
+//		for(i=0 ; str[i]!='\0' ; i++ )
+//		{
+//  			write<<str[i];
+//  		}
+//  		
+//  	ifstream read("File Practice . txt");
+//	  char ch;
+//	  while(! read.eof())	
+//	  {
+//	  	ch=read.get();
+//	  	cout.put(ch);
+//	  }
+//	return 0;
+//}

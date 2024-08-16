@@ -1,0 +1,9 @@
+Data Abstraction in C++
+Data Abstraction is a process of providing only the essential details to the outside world and hiding the internal details,
+ i.e., representing only the essential details in the program.
+Data Abstraction is a programming technique that depends on the seperation of the interface and implementation details of the program.
+Let's take a real life example of AC, which can be turned ON or OFF, change the temperature, change the mode, 
+and other external components such as fan, swing. But, we don't know the internal details of the AC, i.e., how it works internally.
+ Thus, we can say that AC seperates the implementation details from the external interface.
+C++ provides a great level of abstraction. For example, pow() function is used to calculate the power of a number without knowing
+ the algorithm the function follows.
